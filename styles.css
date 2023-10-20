@@ -75,3 +75,19 @@ h4 {
     color: #c9184a;
     text-decoration: underline;
 }
+fieldset {
+    text-align: center;
+    margin: 35px;
+    padding: 20px;
+    border-color: #550c21;
+}
+label {
+    color: #550c21;
+    font-family: serif;
+}
+input {
+    font-size: larger;
+}
+#submit {
+    font-family: serif;
+}
