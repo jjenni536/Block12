@@ -52,15 +52,22 @@ div {
 }
 nav {
     background-color: black;
-    color: #c9184a;
     padding: 10px;
-    margin: 0px;
     z-index: 2;
-    position: fixed;
+    position: absolute
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: #c9184a;
+    font-size: 1em;
+}
+a:hover {
+color: #ff8fa3;
+background-color: white;
 }
 
 footer{
@@ -74,7 +81,6 @@ h1 {
     font-kerning: 10px;
     text-align: center;
     padding: 5px;
-    margin: px;
     display: flex;
 }
 p {
@@ -101,7 +107,7 @@ h4 {
     color: #c9184a;
     text-decoration: underline;
 }
-fieldset {
+form {
     text-align: center;
     margin: 35px;
     padding: 20px;
@@ -114,8 +120,11 @@ label {
 input {
     font-size: larger;
 }
-#submit {
+button {
     font-family: serif;
+    font-size: 1em;
+    background-color: #550c21;
+    color: #ff8fa3;
 }
 h3 {
     display: flex;
@@ -123,4 +132,24 @@ h3 {
     padding: 20px;
     text-align: left;
     text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  html {
+    background-color: darkseagreen;
+  }  
+}
+#name {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+}
+#contact-header {
+    color: ;
 }
