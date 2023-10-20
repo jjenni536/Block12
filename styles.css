@@ -1,45 +1,66 @@
-img {
-    width: 25%;
-    display: inline-flexbox;
-    position: top;
-    height: auto;
+ img {
+    width: 250px;
+    display: flex;
+    height: 390px;
     background-color:black;
-    padding: 2px;
     margin: 10px;
-    align-items: center;
-}
+    }
+
+div > img {
+    width: 250px;
+    display: flex;
+    height: 250px;
+    background-color:black;
+    margin: 20px;
+    justify-content: center;
+    }
+
+section > img {
+    width: 250px;
+    display: flex;
+    height: 250px;
+    background-color:black;
+    margin: 20px;
+    justify-content: center;
+    }
 
 html {
     background-color: #ff8fa3;
 }
 
 section {
-    display: inline-block;
+    display: flex;
     margin: 15px;
     background-color: crimson;
     padding: 20px;
     border-color: brown;
     border-style: solid;
-    width: fit-content;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
 div {
     background-color: crimson;
-    display: inline-block;
+    display: flex;
     margin: 15px;
     padding: 20px;
     border-color: brown;
     border-style: solid;
     text-align: center;
-    width: fit-content;
+    display: flex;
 }
 nav {
     background-color: black;
     color: #c9184a;
-    text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer{
@@ -53,7 +74,8 @@ h1 {
     font-kerning: 10px;
     text-align: center;
     padding: 5px;
-    margin: 10px;
+    margin: px;
+    display: flex;
 }
 p {
     text-align: center;
@@ -63,6 +85,10 @@ p {
     border-style: solid;
     border-color: #ff8fa3;
     line-height: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 h4 {
     background-color: #fff0f3;
@@ -90,4 +116,11 @@ input {
 }
 #submit {
     font-family: serif;
+}
+h3 {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    text-align: left;
+    text-decoration: underline;
 }
